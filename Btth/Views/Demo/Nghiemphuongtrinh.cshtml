@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Nghiemphuongtrinh";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Nghiemphuongtrinh</h2>
+
+@using (Html.BeginForm("Nghiemphuongtrinh", "Demo"))
+{
+    <label>Số thứ nhất: </label>
+    <input type="text" name="soA" />
+    <label>Số thứ hai: </label>
+    <input type="text" name="soB" />
+    <input type="submit" value="Nghiệm Phương trình" />
+}
+<label>Nghiệm X là: @ViewBag.NghiemX</label>
